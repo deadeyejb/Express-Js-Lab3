@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/style.contact.css">
+    
+</head>
+<body>
+    <%- include('./partials/navbar.ejs')   %>
+    <main>
+    <div class="container">
+               
+            <h2>Contact</h2>
+            <p>Looking forward to hearing from you</p>
+            <p>Phone: +1 123 456-7890</p>
+            
+        </div>
+
+        
+        <div class="cont-form"> 
+            <h2>Contact Form</h2>
+            <form id="form" class="form" >
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required>
+                
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    
+    </main>
+    <%- include('./partials/footer.ejs') %>
+   
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const contactNumber = document.getElementById("contactNumber").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            
+
+           
+            window.location.href = "/"; 
+        });
+    </script>
+</body>
+</html>

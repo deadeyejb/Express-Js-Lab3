@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+     margin:0px;
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    background: linear-gradient(to right, #22c7e4, #066980);
+}
+.logo{
+    font-size: 30px;
+    margin:.5rem;
+    
+}
+
+.navbar-links ul{ 
+    padding: 0;
+    margin:0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color:white;
+    margin-left:8px;
+    
+}
+.navbar-links a:hover{
+    background-color: rgba(80, 60, 60, 0.618);
+}
+main{
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+.container {
+    flex: 1;
+    padding: 20px;
+    
+   
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.container p.phone {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cont-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+   
+    border-radius: 5px;
+}
+
+.cont-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cont-form label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cont-form input[type="text"],
+.cont-form input[type="tel"],
+.cont-form input[type="email"],
+.cont-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cont-form textarea {
+    resize: vertical;
+}
+
+.cont-form input[type="submit"] {
+    background-color: #3084dd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cont-form input[type="submit"]:hover {
+    background-color: #37bbd3;
+}
+
+.footer{
+    background: linear-gradient(to right, #22c7e4, #066980);
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+
+
+
+
+}

@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+     margin:0px;
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    background: linear-gradient(to right, #22c7e4, #066980);
+}
+.logo{
+    font-size: 30px;
+    margin:.5rem;
+    
+}
+
+.navbar-links ul{ 
+    padding: 0;
+    margin:0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color:white;
+    margin-left:8px;
+    
+}
+.navbar-links a:hover{
+    background-color: rgba(80, 60, 60, 0.618);
+}
+
+
+body{
+  background-color: rgb(255, 255, 255);
+   
+} 
+
+.intro{
+    display: flex;
+    /* justify-content:space-around; */
+    align-items: center;
+    margin-bottom: 20px;
+   
+    /* margin-top: 20px; */
+}
+.introduction{
+    flex:1;
+    text-align: center;
+    /* overflow: hidden;  */
+} 
+
+.intro h2 {
+    font-size: 24px;
+    color: #E74C3C;
+    margin-bottom: 10px;
+}
+.intro p {
+        font-size: 16px;
+        color: #3498DB;;
+    
+    }
+    .introduction h2,
+.introduction p {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+    .picture{
+        flex: 1;
+        text-align: center;
+        margin-top: 50px
+    }
+
+    .picture img{
+        
+    height: 450px;
+    border-radius: 15px;
+    border: none;
+    
+    }
+   
+
+    .about-link{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+       margin-bottom:5px;
+       background: linear-gradient(to right, #22c7e4, #066980);
+       padding:8px;
+       border-radius: 8px;
+    }
+
+    .about-link:hover{
+        background: rgba(80, 60, 60, 0.618);
+
+    }
+.footer{
+    background: linear-gradient(to right, #22c7e4, #066980);
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+
+
+
+
+}
+    @media only  screen and (max-width:768px){
+        .navbar-links ul{
+            display: flex;
+            flex-direction: column;
+            flex-direction: flex-end;
+    
+        }
+
+        .intro{
+            flex-direction: column;
+           
+            align-items:center
+        }
+
+        .introduction{
+            
+            text-align: center;;
+        }
+
+    .picture{
+        position: "relative";
+    width: 100%;
+    height: auto;
+    }
+    
+   
+    }
+    

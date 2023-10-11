@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0;
+     margin:0px;
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    background: linear-gradient(to right, #22c7e4, #066980);
+}
+.logo{
+    font-size: 30px;
+    margin:.5rem;
+    
+}
+
+.navbar-links ul{ 
+    padding: 0;
+    margin:0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color:white;
+    margin-left:8px;
+    
+}
+.navbar-links a:hover{
+    background-color: rgba(80, 60, 60, 0.618);
+}
+
+
+
+
+
+header {
+   
+    font-size: 32px;
+     margin-top: 15px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+.skills {
+    margin-top: 20px;
+}
+
+.skills h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+}
+.skills img {
+    width: 50px; 
+    height: 50px; 
+    margin-bottom: 5px;
+}
+
+.skills li p {
+    margin: 0;
+}
+
+.resume a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #411818;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+
+.resume a:hover {
+    background-color: #555;
+}
+
+.footer{
+    background: linear-gradient(to right, #22c7e4, #066980);
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+
+
+
+
+}

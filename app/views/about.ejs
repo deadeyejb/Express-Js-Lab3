@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="/css/style.about.css">
+</head>
+<body>
+
+    <%- include('./partials/navbar.ejs')   %>
+    <header>
+    About me
+            
+        </header>
+  <main>
+    <section class="about">
+        <div class="about-image">
+        <img src="img/about-img.jpg">
+        </div>
+        <div class="about-content">
+        <h2>Jbson Subedi</h2>
+        <p>Hello, I am Jbson Subedi, a web developer from Toronto,Canada.
+            I have a passion for creating beautiful and responsive websites using HTML, CSS, and JavaScript. 
+            I have experience in working with various frameworks and libraries such as Bootstrap, React.
+             I also have skills in backend development using Node.js, Express, and MongoDB.
+              I enjoy learning new technologies and exploring new challenges in web development.</p>
+            </div>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                <img src="/img/html.png" alt="HTML">
+                HTML
+            </li>
+            <li>
+                <img src="/img/css.png" alt="CSS">
+                CSS
+            </li>
+            <li>
+                <img src="/img/js.png" alt="JavaScript">
+                JavaScript
+            </li>
+            <li>
+                <img src="/img/mern.png" alt="MERN Stack">
+                MERN Stack
+            </li>
+        </ul>
+    </section>
+    <section class="resume">
+        <h2>Want to know more about me.</h2>
+        <a href="img/Resume.pdf">Here you go.</a>
+    </section>
+  </main>
+  <%- include('./partials/footer.ejs') %>
+</body>
+</html>
